@@ -66,7 +66,7 @@
     _overlayLayer = [GMSGroundOverlay groundOverlayWithBounds:overlayBounds icon:_image];
     _overlayLayer.position = middle;
     _overlayLayer.bearing = _bearing;
-    _overlayLayer.tappable = YES;
+    _overlayLayer.tappable = NO;
     _overlayLayer.zIndex = 1000;
     [self update];
   }

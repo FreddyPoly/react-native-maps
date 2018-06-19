@@ -8,6 +8,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.google.android.gms.maps.model.RoundCap;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,6 +82,8 @@ public class AirMapPolyline extends AirMapFeature {
     options.width(width);
     options.geodesic(geodesic);
     options.zIndex(zIndex);
+    options.endCap(new RoundCap());
+    options.startCap(new RoundCap());
     return options;
   }
 
